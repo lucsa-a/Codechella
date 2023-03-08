@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Codechella</title>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="./home.html" class="cabecalho__logolink"><img src="./assets/Logo-branca.svg" alt="Logo do Codechella" class="cabecalho__imagem"></a>
+        <ul class="lista-menu">
+            <li class="lista-menu__item">
+                <a href="./experiencia.html" class="lista-menu__link">A experiência</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="./mapa.html" class="lista-menu__link">Mapa de Setores</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Informações</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Ingresso</a>
+            </li>
+        </ul>
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="./experiencia.html" class="lista-menu__link">A experiência</a>
+                </li>
+                <hr/>
+                <li class="lista-menu__item">
+                    <a href="./mapa.html" class="lista-menu__link">Mapa de Setores</a>
+                </li>
+                <hr/>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Informações</a>
+                </li>
+                <hr/>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ingresso</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="banner">
+        <picture>
+            <source srcset="./assets/Banner-desktop.jpg" media="(min-width: 1440px)" >
+            <source srcset="./assets/Banner-tablet.jpg" media="(min-width: 768px)">
+            <img src="./assets/Banner-mobile.jpg" alt="Boas-vindas ao #Codechella2023!" class="banner__imagem">
+        </picture>
+    </section>
+    <section class="programacao">
+        
+        <div class="programacao__conteudo">
+            <picture>
+                <source srcset="./assets/Plateia-tablet.png" media="(min-width: 768px)">
+                <img src="./assets/Plateia-mobile.png" alt="Plateia do Codechella" class="programacao__imagem">
+            </picture>
+            <div class="programacao__informacoes">
+                <h2 class="programacao__titulo">< 11 e 12 de Março ></h2>
+                <h2 class="programacao__titulo">Aluródromo de São Paulo</h2>
+                <p class="programacao__texto">Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!</p>
+                <a href="#" class="programacao__botao">Comprar ingresso!</a>
+            </div>
+        </div>
+    </section>
+    <section class="lineup">
+        <h2 class="lineup__titulo">/Line-Up/</h2>
+        <div class="lineup__artistas">
+            <div class="artistas-data">
+                <hr/>
+                <h3 class="artistas-titulo">SÁBADO <11/03></h3>
+                <hr/>
+            </div>
+            <h4 class="artistas-principal">System of a DOM</h4>
+            <div class="artistas-linha">
+                <div class="artistas-grupo">
+                    <h5 class="artistas-secundario">Python Maiden</h5>
+                    <h5 class="artistas-secundario">Apollo Client 2001</h5>
+                </div>
+                <div class="artistas-grupo">
+                    <h5 class="artistas-secundario">Bon Java</h5>
+                    <h5 class="artistas-secundario">NickCallback</h5>
+                </div>
+            </div>
+            <div class="artistas-linha">
+                <div class="artistas-grupo">
+                    <h6 class="artistas-terciario">Linkin Promises</h6>
+                    <h6 class="artistas-terciario">Fullstack Fighters</h6>
+                </div>
+                <div class="artistas-grupo">
+                    <h6 class="artistas-terciario">Papa React</h6>
+                    <h6 class="artistas-terciario">Angular in Chains</h6>
+                </div>
+            </div>
+            <div class="artistas-linha">
+                <div class="artistas-grupo">
+                    <p class="artistas-texto">Agnostic Front-end</p>
+                    <p class="artistas-texto">SlipkNode</p>
+                </div>
+                <div class="artistas-grupo">
+                    <p class="artistas-texto">Pink Flutter</p>
+                    <p class="artistas-texto">Kiss</p>
+                </div>
+            </div>
+        </div>
+        <div class="lineup__artistas">
+            <div class="artistas-data">
+                <hr/>
+                <h3 class="artistas-titulo">DOMINGO <12/03></h3>
+                <hr/>
+            </div>
+            <h4 class="artistas-principal">Lana Del Ploy</h4>
+            <div class="artistas-linha">
+                <div class="artistas-grupo">
+                    <h5 class="artistas-secundario">Dua Lib</h5>
+                    <h5 class="artistas-secundario">The Backnd</h5>
+                    <h5 class="artistas-secundario">CSS Styles</h5>
+                </div>
+                <div class="artistas-grupo">
+                    <h5 class="artistas-secundario">ArrayAna Grande</h5>
+                    <h5 class="artistas-secundario">DJ Query</h5>
+                </div>
+            </div>
+            <div class="artistas-linha">
+            <div class="artistas-grupo">
+                <h6 class="artistas-terciario">Miley Cypress</h6>
+                <h6 class="artistas-terciario">The Bootstrap Boys</h6>
+            </div>
+            <div class="artistas-grupo">
+                <h6 class="artistas-terciario">Json Derulo</h6>
+                <h6 class="artistas-terciario">CloudPlay</h6>
+                <h6 class="artistas-terciario">Dev Lovato</h6>
+            </div>
+        </div>
+            <div class="artistas-grupo">
+                <p class="artistas-texto">Kylie MiLOG</p>
+                <p class="artistas-texto">Jenkins Brothers</p>
+                <p class="artistas-texto">Rubycat Dolls</p>
+            </div>
+        </div>
+    </section>
+    <footer class="rodape">
+        <picture>
+            <source srcset="./assets/Rodape-desktop.jpg" media="(min-width: 1440px)" >
+            <source srcset="./assets/Rodape-tablet.jpg" media="(min-width: 768px)">
+            <img src="./assets/Rodape-mobile.jpg" alt="Plateia do Codechella" class="rodape__imagem">
+        </picture>
+        <div class="rodape__conteudo">
+            <img src="./assets/Logo-preta.svg" alt="Logo do Codechella" class="rodape__logo">
+            <div class="rodape__redes">
+                <p class="redes-texto">Acesse nossas redes:</p>
+                <div class="redes-icones">
+                    <a href="#" class="redes-link"><img src="./assets/Whatsapp.svg" alt="Logo do Whatsapp" class="redes-icone"></a>
+                    <a href="#" class="redes-link"><img src="./assets/Twitch.svg" alt="Logo da Twitch" class="redes-icone"></a>
+                    <a href="#" class="redes-link"><img src="./assets/Instagram.svg" alt="Logo do Instagram" class="redes-icone"></a>
+                    <a href="#" class="redes-link"><img src="./assets/Twitter.svg" alt="Logo do Twitter" class="redes-icone"></a>
+                </div>
+            </div>
+            <p class="rodape__texto">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
+        </div>
+    </footer>
+</body>
+</html>

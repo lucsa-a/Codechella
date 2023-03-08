@@ -1,0 +1,37 @@
+@import url('./cabecalho.css');
+@import url('./rodape.css');
+
+:root {
+    /* Cores */
+    --fundo-azul: #2E7BA2;
+    --fundo-laranja: #DF9010;
+    --fundo-amarelo: #FACF9D;
+    --cinza-texto:#444444;
+    --branco: #FFFFFF;
+
+    /* Cores dos Quadrados */
+    --quadrado-azul: #0E7DF1;
+    --quadrado-rosa: #FE016E;
+    --quadrado-verde: #01A89E;
+    --quadrado-violeta: #3F51B5;
+
+    /* Fontes */
+    --fonte-titulo: 'Calistoga', cursive;
+    --fonte-texto: 'Raleway', sans-serif;
+    
+    /* Efeitos */
+    --gradiente-verao :linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
+    --sombra-botao: 4px 4px 0px 0px #444444;
+}
+
+body {
+    font-family: var(--fonte-texto);
+    color: var(--cinza-texto);
+    font-weight: 500;
+    font-size: 20px;
+    background: var(--gradiente-verao);
+}
+
+.banner__imagem {
+    width: 100%;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Setores - Codechella</title>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mapa.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="./home.html" class="cabecalho__logolink"><img src="./assets/Logo-branca.svg" alt="Logo do Codechella" class="cabecalho__imagem"></a>
+        <ul class="lista-menu">
+            <li class="lista-menu__item">
+                <a href="./experiencia.html" class="lista-menu__link">A experiência</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="./mapa.html" class="lista-menu__link">Mapa de Setores</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Informações</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Ingresso</a>
+            </li>
+        </ul>
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="./experiencia.html" class="lista-menu__link">A experiência</a>
+                </li>
+                <hr/>
+                <li class="lista-menu__item">
+                    <a href="./mapa.html" class="lista-menu__link">Mapa de Setores</a>
+                </li>
+                <hr/>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Informações</a>
+                </li>
+                <hr/>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ingresso</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="banner">
+        <picture>
+            <source srcset="./assets/BannerSetores-desktop.jpg" media="(min-width: 1440px)">
+            <source srcset="./assets/BannerSetores-tablet.jpg" media="(min-width: 768px)">
+            <img src="./assets/BannerSetores-mobile.jpg" alt="Mapa de setores" class="banner__imagem">
+        </picture>
+    </section>
+    <section class="palco">
+        <picture>
+            <source srcset="./assets/MapaSetores-desktop.png" media="(min-width: 1440px)">
+            <source srcset="./assets/MapaSetores-tablet.png" media="(min-width: 768px)">
+            <img src="./assets/MapaSetores-mobile.png" alt="Mapa dos Setores representando as áreas dentro do local do evento" class="palco__imagem">
+        </picture>
+        <div class="palco__legenda">
+            <h2 class="palco__titulo">Legenda:</h2>
+            <ul class="palco__lista">
+                <li class="palco__item">
+                    <span class="palco__quadrado quadrado-azul"></span>
+                    <p class="palco__texto">Pista Premium</p>
+                </li>
+                <li class="palco__item">
+                    <span class="palco__quadrado quadrado-rosa"></span>
+                    <p class="palco__texto">Pista Comum</p>
+                </li>
+                <li class="palco__item">
+                    <span class="palco__quadrado quadrado-verde"></span>
+                    <p class="palco__texto">Cadeiras Térreo</p>
+                </li>
+                <li class="palco__item">
+                    <span class="palco__quadrado quadrado-violeta"></span>
+                    <p class="palco__texto">Cadeiras superiores</p>
+                </li>
+                <li class="palco__item">
+                    <span class="palco__quadrado quadrado-azul"></span>
+                    <p class="palco__texto">Rampas</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="detalhes">
+        <h2 class="detalhes__titulo">Mais detalhes sobre os setores:</h2>
+        <div class="detalhes__setores">
+            <div class="detalhes__setor">
+                <picture>
+                    <source srcset="./assets/Setor1-tablet.png" media="(min-width: 768px)">
+                    <img src="./assets/Setor1-mobile.png" alt="Imagem do setor Pista" class="setor-imagem">
+                </picture>
+                <h3 class="setor-titulo">Pista</h3>
+                <p class="setor-texto">Pista convencional, atendida pelos bares e banheiros das laterais do estádio. Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade.</p>
+            </div>
+            <div class="detalhes__setor">
+                <picture>
+                    <source srcset="./assets/Setor2-tablet.png" media="(min-width: 768px)">
+                    <img src="./assets/Setor2-mobile.png" alt="Imagem do setor Pista" class="setor-imagem">
+                </picture>
+                <h3 class="setor-titulo">Pista Premium</h3>
+                <p class="setor-texto">Pista mais próxima do palco, com acesso muito próximo a banheiros e bares num raio de 100m. Todas as pessoas idosas e/ou com deficiência têm direito a acesso gratuito a essa área.</p>
+            </div>
+            <div class="detalhes__setor">
+                <picture>
+                    <source srcset="./assets/Setor3-tablet.png" media="(min-width: 768px)">
+                    <img src="./assets/Setor3-mobile.png" alt="Imagem do setor Pista" class="setor-imagem">
+                </picture>
+                <h3 class="setor-titulo">Cadeiras</h3>
+                <p class="setor-texto">Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada em relação às pistas.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="rodape">
+        <div class="rodape__conteudo">
+            <img src="./assets/Logo-preta.svg" alt="Logo do Codechella" class="rodape__logo">
+            <div class="rodape__redes">
+                <p class="redes-texto">Acesse nossas redes:</p>
+                <div class="redes-icones">
+                    <a href="#" class="redes-link"><img src="./assets/Whatsapp.svg" alt="Logo do Whatsapp" class="redes-icone"></a>
+                    <a href="#" class="redes-link"><img src="./assets/Twitch.svg" alt="Logo da Twitch" class="redes-icone"></a>
+                    <a href="#" class="redes-link"><img src="./assets/Instagram.svg" alt="Logo do Instagram" class="redes-icone"></a>
+                    <a href="#" class="redes-link"><img src="./assets/Twitter.svg" alt="Logo do Twitter" class="redes-icone"></a>
+                </div>
+            </div>
+            <p class="rodape__texto">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
+        </div>
+    </footer>
+</body>
+</html>

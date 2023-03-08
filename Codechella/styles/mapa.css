@@ -1,0 +1,131 @@
+/* Cabeçalho */
+.lista-menu__item:nth-child(3){
+    text-decoration: underline;
+}
+ @media screen and (min-width: 768px) {
+    .lista-menu__item:nth-child(2) {
+        text-decoration: underline;
+    }
+    .lista-menu__item:nth-child(3){
+        text-decoration: none;
+    }
+}
+
+/* Palco */
+.palco__titulo {
+    font-weight: 700;
+    margin-left: 2em;
+}
+
+.palco__texto {
+    margin-left: .5em;
+}
+
+.palco__item {
+    display: flex;
+    margin: 1em 2em;
+    align-items: center;
+}
+
+.palco__quadrado {
+    width: 32px;
+    height: 32px;
+    margin: .25em 0;
+}
+
+.quadrado-azul {
+    background-color: var(--quadrado-azul);
+}
+
+.quadrado-rosa {
+    background-color: var(--quadrado-rosa);
+}
+
+.quadrado-verde {
+    background-color: var(--quadrado-verde);
+}
+
+.quadrado-violeta {
+    background-color: var(--quadrado-violeta);
+}
+
+/* Mais detalhes */
+.detalhes {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.detalhes__titulo,
+.setor-titulo {
+    font-size: 32px;
+    font-weight: 700;
+    margin: .5em .5em 1em .5em;
+}
+
+.setor-imagem {
+    margin-top: 1em;
+}
+
+.setor-texto {
+    line-height: 2;
+    margin: 0 2em;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    /* Palco */
+    .palco picture {
+        display: block;
+        text-align: center;
+    }
+
+    .palco__titulo {
+        font-size: 32px;
+        margin-top: 2em;
+        margin-left: 7.5em;
+    }
+
+    .palco__lista {
+        margin-left: 10em;
+    }
+
+    /* Mais detalhes */
+    .detalhes__titulo {
+        font-size: 40px;
+        margin-top: 1.5em;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+    /* Palco */
+    .palco {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-left: 5em;
+    }
+
+    .palco__titulo {
+        margin-left: 1.8em;
+    }
+
+    .palco__lista {
+        margin-left: 1em;
+    }
+
+    /* Mais detalhes */
+    .detalhes__setores {
+        display: flex;
+        padding: 0 5em;
+    }
+
+    .setor-imagem {
+        margin-top: 0;
+    }
+
+     .detalhes__setor:nth-child(2) {
+        margin-top: 5em;
+    }
+    
+
+}

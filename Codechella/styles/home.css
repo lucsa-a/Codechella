@@ -1,0 +1,163 @@
+/* Programação */
+.programacao {
+    text-align: center;
+}
+
+.programacao__imagem {
+    padding: 2em 0;
+}
+
+.programacao__titulo {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.programacao__texto {
+    padding: 1em;
+    line-height: 2;
+}
+
+.programacao__botao {
+    text-decoration: none;
+    background-color: var(--fundo-azul);
+    color: var(--branco);
+    font-weight: 700;
+    padding: .8em 4em .8em 2em;
+    display: inline-block;
+    margin: .8em 0;
+    border: none;
+    background-image: url(../assets/ingresso.svg);
+    background-repeat: no-repeat;
+    background-position: 11.5em;
+    border-radius: 16px;
+    box-shadow: var(--sombra-botao);
+}
+
+/* Line-Up */
+.lineup {
+    text-align: center;
+}
+
+.lineup__titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 48px;
+    margin: 1em 0;
+}
+
+.artistas-titulo {
+    background-color: var(--fundo-laranja);
+    color: var(--branco);
+    font-size: 32px;
+    font-family: var(--fonte-titulo);
+    padding: .5em;
+    display: inline-block;
+    margin: 1em 0;
+}
+
+.lineup__artistas hr {
+    display: none;
+}
+
+.artistas-principal {
+    font-weight: 800;
+    font-size: 48px;
+    margin: .5em 0;
+}
+
+.artistas-grupo {
+    margin: 2em .8em;
+}
+
+.artistas-secundario {
+    font-weight: 700;
+    font-size: 40px;
+    margin: .5em 0;
+}
+
+.artistas-terciario {
+    font-weight: 700;
+    font-size: 32px;
+    margin: .5em 0;
+}
+
+.artistas-texto {
+    font-size: 32px;
+    margin: .5em 0;
+}
+
+/* Tablet */
+@media screen and (min-width:768px) {
+    /* Programação */
+    .programacao__texto {
+        padding: 1em 3.5em;
+        line-height: 2;
+    }
+
+    /* Line-up */
+    .lineup__titulo {
+        font-size: 64px;
+    }
+
+    .artistas-data {
+        display: flex;
+        align-items: center;
+    }
+
+    .artistas-titulo {
+        font-size: 48px;
+    }
+    
+    .lineup__artistas hr{
+        display: block;
+        background-color: var(--fundo-laranja);
+        border: none;
+        height: 1px;
+        width: 10%;
+    }
+
+    .artistas-grupo {
+        display: flex;
+        justify-content: center;
+        margin: 2em .8em;
+        gap: 1.5em;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width:1440px) {
+    /* Programação */
+    .programacao__conteudo {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 3em;
+    }
+
+    .programacao__titulo:nth-child(1) {
+        margin-top: 2em;
+    }
+
+    /* Line-up */
+
+    .lineup__artistas hr{
+        width: 25%;
+    }
+
+    .artistas-linha {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .artistas-grupo {
+        margin: 1.5em 0 1em 0;
+    }
+
+    .artistas-principal,
+    .artistas-secundario,
+    .artistas-terciario,
+    .artistas-texto {
+        margin: 0;
+    }
+}
